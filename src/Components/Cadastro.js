@@ -21,7 +21,7 @@ export default function Cadastro() {
         password: password,
         passwordConfirm: confirm
      }
-     const promise = axios.post("http://localhost:5000/users", body)
+     const promise = axios.post("https://mywallet-projeto.herokuapp.com/users", body)
 
      promise.then(() => {
      setSignup(<ThreeDots color="#FFFFFF" height={13} width={51} />)

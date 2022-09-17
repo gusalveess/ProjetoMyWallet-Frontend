@@ -29,7 +29,7 @@ export default function DataBase() {
       },
     };
 
-    const promisse = axios.get(`http://localhost:5000/data`, config);
+    const promisse = axios.get(`https://mywallet-projeto.herokuapp.com/data`, config);
     promisse.then((res) => {
       setData(res.data);
     });
@@ -50,7 +50,7 @@ export default function DataBase() {
 
       if (confirm) {
         const promisse = axios.delete(
-          `http://localhost:5000/data/${props._id}`
+          `https://mywallet-projeto.herokuapp.com/data/${props.id}`
         );
         promisse.then(() => {
           alert("Registro Deletado!");
