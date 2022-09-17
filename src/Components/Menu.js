@@ -112,12 +112,10 @@ const Mid = styled.div`
   }
 
   span {
-    position: absolute;
-    width: 57px;
-    height: 20px;
-    left: 40px;
-    top: 494px;
-    display: flex;
+   display: flex;
+   position: relative;
+   top: 370px;
+   left: 40px;
   }
 
   h6 {
@@ -132,7 +130,7 @@ const Mid = styled.div`
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    padding-left: 180px;
+    padding-left: 20px;
   }
 `;
 

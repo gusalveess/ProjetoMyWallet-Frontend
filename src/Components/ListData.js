@@ -50,7 +50,7 @@ export default function DataBase() {
 
       if (confirm) {
         const promisse = axios.delete(
-          `https://mywallet-projeto.herokuapp.com/data/${props.id}`
+          `https://mywallet-projeto.herokuapp.com/data/${props._id}`
         );
         promisse.then(() => {
           alert("Registro Deletado!");
@@ -105,7 +105,7 @@ export default function DataBase() {
           <ion-icon onClick={() => Del()} name="close-outline"></ion-icon>
         </DataOne>
         <span>
-          <h6>Saldo</h6>
+          <h6>Saldo:</h6>
           <h4
             style={
               type === "plus" ? { color: "#03AC00" } : { color: "#C70000" }
