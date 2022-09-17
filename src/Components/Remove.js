@@ -29,7 +29,7 @@ export default function Add() {
       type: "Saída",
     };
 
-    const promise = axios.post("http://localhost:5000/data", body, config);
+    const promise = axios.post("https://mywallet-projeto.herokuapp.com/data", body, config);
     promise.then((res) => {
       setDisabled(true);
       setSave(<ThreeDots color="#FFFFFF" height={13} width={51} />);
